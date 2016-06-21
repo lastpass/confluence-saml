@@ -4,10 +4,14 @@ package:
   ant tar
 
 Then uncompress the resulting .tar.gz file from the out
-directory, and run the install script.
+directory, and run the install script.  Alternatively,
+build and install in one step:
 
-Optionally, you may use the appropriate ant targets to
-generate debian or rpm packages.
+  ant && sudo ant install
+
+One final option, you may use the appropriate ant targets
+to generate debian or rpm packages and install them with
+your package manager.
 
 After installation, you will need to configure the
 Service Provider and Identity Provider settings in the

@@ -103,7 +103,10 @@
             <arg value="${output.dir}"/>
             <arg value="${ant.project.name}-${version}/"/>
         </exec>
-        <delete dir="${output.dir}/${ant.project.name}-${version}/"/>
+    </target>
+
+    <target name="install">
+        <exec executable="./install.sh" dir="${output.dir}/${ant.project.name}-${version}"/>
     </target>
 
     <target name="__install" depends="jar">
