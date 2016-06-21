@@ -138,7 +138,7 @@
         <copy todir="${DESTDIR}${confluence.home.dir}/confluence/WEB-INF/classes/"
             file="${conf.dir}/seraph-config.xml"/>
 
-        <copy todir="${DESTDIR}${confluence.home.dir}/lib/">
+        <copy todir="${DESTDIR}${confluence.home.dir}/confluence/WEB-INF/lib/">
             <fileset dir="lib">
                 <include name="opensaml-2.6.1.jar"/>
                 <include name="xmltooling-1.4.1.jar"/>
